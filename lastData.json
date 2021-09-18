@@ -1,0 +1,20 @@
+{
+    "Ethereum / TetherUS": {
+        "value": "3295.42",
+        "coin_currency": "Ethereum / TetherUS",
+        "chart_url": "https://tr.tradingview.com/chart/ETHUSDT/2KtR7fZd/",
+        "color": "red"
+    },
+    "Bitcoin / TetherUS": {
+        "value": "45373.06",
+        "coin_currency": "Bitcoin / TetherUS",
+        "chart_url": "https://tr.tradingview.com/chart/BTCUSDT/7fpRcHOV/",
+        "color": "red"
+    },
+    "Binance Coin / TetherUS": {
+        "value": "407.4",
+        "coin_currency": "Binance Coin / TetherUS",
+        "chart_url": "https://tr.tradingview.com/chart/BNBUSDT/8wkYJxun/",
+        "color": "red"
+    }
+}
