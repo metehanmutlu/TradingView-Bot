@@ -20,8 +20,9 @@ class TradingView():
             try:
                 values = self.driver.find_elements_by_class_name(
                     'valueValue-2KhwsEwE')
-                self.coin_currency = self.driver.find_element_by_class_name(
-                    'tv-chart-view__symbol-link').text
+                # self.coin_currency = self.driver.find_element_by_class_name(
+                #     'tv-chart-view__symbol-link').text
+                self.coin_currency = self.url.split('/')[4]
                 value = values[-2].text
                 color = values[-2].get_attribute('style')
                 data = {

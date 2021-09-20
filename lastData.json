@@ -16,5 +16,17 @@
         "coin_currency": "Binance Coin / TetherUS",
         "chart_url": "https://tr.tradingview.com/chart/BNBUSDT/8wkYJxun/",
         "color": "red"
+    },
+    "BTCUSDT": {
+        "value": "45373.06",
+        "coin_currency": "BTCUSDT",
+        "chart_url": "https://tr.tradingview.com/chart/BTCUSDT/7fpRcHOV/",
+        "color": "red"
+    },
+    "ETHUSDT": {
+        "value": "3655.28",
+        "coin_currency": "ETHUSDT",
+        "chart_url": "https://tr.tradingview.com/chart/ETHUSDT/2KtR7fZd/",
+        "color": "green"
     }
 }

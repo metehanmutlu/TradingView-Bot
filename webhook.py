@@ -14,7 +14,7 @@ class Webhook():
 
         self.embed = DiscordEmbed(
             title=self.data['coin_currency'],
-            description=f'{self.getEmbedText()}: `{self.data["value"]}`\n[Click]({self.data["chart_url"]})',
+            description=f'**{self.getEmbedText()}: `{self.data["value"]}`**',
             color=self.chooseColor()
         )
         self.embed.set_timestamp()
