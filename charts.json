@@ -5,10 +5,10 @@
     },
     "ETHUSDT": {
         "url": "https://tr.tradingview.com/chart/ETHUSDT/2KtR7fZd/",
-        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/879775732786692116/Ethereum-Logo.wine.png?width=778&height=519"
+        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/879775732786692116/Ethereum-Logo.wine.png?width=923&height=519"
     },
     "BNBUSDT": {
         "url": "https://tr.tradingview.com/chart/BNBUSDT/8wkYJxun/",
-        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/886271095819366500/bnb.png"
+        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/886271095819366500/bnb.png?width=923&height=519"
     }
 }
