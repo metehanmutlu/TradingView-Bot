@@ -3,18 +3,18 @@
         "value": "45373.06",
         "coin_currency": "BTCUSDT",
         "chart_url": "https://tr.tradingview.com/chart/BTCUSDT/7fpRcHOV/",
-        "color": "red"
+        "color": "green"
     },
     "ETHUSDT": {
         "value": "3295.42",
         "coin_currency": "ETHUSDT",
         "chart_url": "https://tr.tradingview.com/chart/ETHUSDT/2KtR7fZd/",
-        "color": "red"
+        "color": "green"
     },
     "BNBUSDT": {
         "value": "407.4",
         "coin_currency": "BNBUSDT",
         "chart_url": "https://tr.tradingview.com/chart/BNBUSDT/8wkYJxun/",
-        "color": "red"
+        "color": "green"
     }
 }
