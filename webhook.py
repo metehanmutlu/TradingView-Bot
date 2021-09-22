@@ -41,7 +41,9 @@ class Webhook():
         thumbnail_url = None
         for i in charts:
             if self.data['coin_currency'] == i:
-                thumbnail_url = charts[i]['thumbnail_url']
+                if 'thumbnail_url' in charts[i]:
+                    thumbnail_url = charts[i]['thumbnail_url']
+                    return thumbnail_url
         else:
             return thumbnail_url
 

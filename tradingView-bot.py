@@ -6,9 +6,10 @@ from webhook import Webhook
 
 
 class TradingView():
-    def __init__(self, url) -> None:
-        path = os.path.abspath('chromedriver.exe')
+    def __init__(self, url, coin_name) -> None:
         self.url = url
+        self.coin_name = coin_name
+        path = os.path.abspath('chromedriver.exe')
         self.driver = webdriver.Chrome(executable_path=path)
         self.driver.get(self.url)
         time.sleep(2)
@@ -18,31 +19,37 @@ class TradingView():
         # color: rgb(255, 82, 82); => Red
         while True:
             try:
+                time.sleep(8)
                 values = self.driver.find_elements_by_class_name(
                     'valueValue-2KhwsEwE')
-                # self.coin_currency = self.driver.find_element_by_class_name(
-                #     'tv-chart-view__symbol-link').text
-                self.coin_currency = self.url.split('/')[4]
-                value = values[-2].text
-                color = values[-2].get_attribute('style')
-                data = {
-                    "value": value,
-                    "coin_currency": self.coin_currency,
-                    "chart_url": self.url
-                }
-                if color == 'color: rgb(76, 175, 80);':
-                    print('Green', value)
-                    data['color'] = 'green'
-                    self.checkResponse(data)
-                elif color == 'color: rgb(255, 82, 82);':
-                    data['color'] = 'red'
-                    print('Red', value)
-                    self.checkResponse(data)
+                if values is not None:
+                    # self.coin_currency = self.driver.find_element_by_class_name(
+                    #     'tv-chart-view__symbol-link').text
+                    self.coin_currency = self.coin_name
+                    value = values[-2].text
+                    color = values[-2].get_attribute('style')
+                    data = {
+                        "value": value,
+                        "coin_currency": self.coin_currency,
+                        "chart_url": self.url
+                    }
+                    if color == 'color: rgb(76, 175, 80);':
+                        print('Green', value)
+                        data['color'] = 'green'
+                        self.checkResponse(data)
+                    elif color == 'color: rgb(255, 82, 82);':
+                        data['color'] = 'red'
+                        print('Red', value)
+                        self.checkResponse(data)
+                    else:
+                        print('İnner Error!')
+                        self.driver.get(self.url)
+
+                    # time.sleep(10)
                 else:
-                    print('Error!')
+                    print('Outer Error!')
                     self.driver.get(self.url)
 
-                time.sleep(10)
             except KeyboardInterrupt:
                 self.driver.close()
 
@@ -58,7 +65,7 @@ class TradingView():
         else:
             lastData[self.coin_currency] = data
 
-            Webhook(data).sendMessage()
+            # Webhook(data).sendMessage()
         with open('lastData.json', 'w', encoding='UTF-8') as file:
             json.dump(lastData, file, indent=4)
 
@@ -80,4 +87,4 @@ for i, coin in enumerate(charts, start=1):
         coin_name = coin
         break
 
-TradingView(charts[coin_name]['url']).startLoop()
+TradingView(charts[coin_name]['url'], coin_name).startLoop()
