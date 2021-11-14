@@ -1,0 +1,37 @@
+{
+    "BTCUSDT": {
+        "value": 64275.539423270966,
+        "color": 1,
+        "coinCurrency": "BTCUSDT"
+    },
+    "SLPUSDT": {
+        "value": 0.07069836059194173,
+        "color": 2,
+        "coinCurrency": "SLPUSDT"
+    },
+    "MANAUSDT": {
+        "value": 3.318356227070028,
+        "color": 2,
+        "coinCurrency": "MANAUSDT"
+    },
+    "ADAUSDT": {
+        "value": 2.036243954585375,
+        "color": 2,
+        "coinCurrency": "ADAUSDT"
+    },
+    "SXPUSDT": {
+        "value": 2.5504575326085153,
+        "color": 1,
+        "coinCurrency": "SXPUSDT"
+    },
+    "BNBUSDT": {
+        "value": 648.6804402493162,
+        "color": 1,
+        "coinCurrency": "BNBUSDT"
+    },
+    "ETHUSDT": {
+        "value": 4602.234096399243,
+        "color": 2,
+        "coinCurrency": "ETHUSDT"
+    }
+}

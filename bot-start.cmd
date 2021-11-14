@@ -1,1 +1,0 @@
-python3.9 tradingView-bot.py

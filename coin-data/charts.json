@@ -1,0 +1,15 @@
+{
+    "BTCUSDT": {
+        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/879775735827529778/Bitcoin-Emblem.png?width=923&height=519"
+    },
+    "ETHUSDT": {
+        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/879775732786692116/Ethereum-Logo.wine.png?width=923&height=519"
+    },
+    "BNBUSDT": {
+        "thumbnail_url": "https://media.discordapp.net/attachments/852299725511327764/886271095819366500/bnb.png?width=923&height=519"
+    },
+    "ADAUSDT": {},
+    "MANAUSDT": {},
+    "SXPUSDT": {},
+    "SLPUSDT": {}
+}

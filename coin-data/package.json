@@ -1,0 +1,16 @@
+{
+  "name": "tradingview-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mathieuc/tradingview": "^2.0.91",
+    "moment": "^2.29.1"
+  }
+}

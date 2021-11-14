@@ -17,7 +17,7 @@ class Webhook():
             description=f'**{self.getEmbedText()}: `{self.data["value"]}`**',
             color=self.chooseColor()
         )
-        self.embed.set_timestamp()
+        # self.embed.set_timestamp()
 
         thumbnail_url = self.chooseThumbnail()
         if thumbnail_url is not None:
@@ -35,7 +35,7 @@ class Webhook():
         return value
 
     def chooseThumbnail(self):
-        with open('charts.json', encoding='UTF-8') as file:
+        with open('./coin-data/charts.json', encoding='UTF-8') as file:
             charts = json.load(file)
 
         thumbnail_url = None
