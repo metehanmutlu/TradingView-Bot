@@ -1,5 +1,5 @@
 
-# Tırnaklar içerisine webhook URL'nizi yapıştırmanız gerek
+# You need to paste your webhook URL into the quotes
 
 # mEDE Test Server
 webhook_url = "https://discord.com/api/webhooks/877610743518879866/RQINQT5Y24zghznFwsmXEEymiLRIofIHYWbew8gSCM3GNnLzY2VOQtPHwpQoRJhGl66f"
