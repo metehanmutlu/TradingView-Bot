@@ -1,7 +1,6 @@
 import json
 
-coin_name = input('Coin Türü (BTCUSDT): ')
-# coin_link = input('Coin Link: ')
+coin_name = input('Coin Type (BTCUSDT): ')
 
 with open('./coin-data/charts.json', encoding='UTF-8') as file:
     charts = json.load(file)
@@ -14,4 +13,4 @@ if coin_name not in charts:
 with open('./coin-data/charts.json', 'w', encoding='UTF-8') as file:
     json.dump(charts, file, indent=4)
 
-input('Coin Eklendi !\nEnter...')
+input('Coin Added !\nEnter...')
